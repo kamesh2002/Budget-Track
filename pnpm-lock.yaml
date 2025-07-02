@@ -12,8 +12,8 @@ importers:
         specifier: ^2.49.8
         version: 2.49.8
       chart.js:
-        specifier: ^4.4.9
-        version: 4.4.9
+        specifier: ^4.5.0
+        version: 4.5.0
       lucide-react:
         specifier: ^0.511.0
         version: 0.511.0(react@19.1.0)
@@ -25,13 +25,13 @@ importers:
         version: 19.1.0
       react-chartjs-2:
         specifier: ^5.3.0
-        version: 5.3.0(chart.js@4.4.9)(react@19.1.0)
+        version: 5.3.0(chart.js@4.5.0)(react@19.1.0)
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
       react-qr-code:
-        specifier: ^2.0.15
-        version: 2.0.15(react@19.1.0)
+        specifier: ^2.0.16
+        version: 2.0.16(react@19.1.0)
       react-router-dom:
         specifier: ^7.6.1
         version: 7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -573,8 +573,8 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chart.js@4.4.9:
-    resolution: {integrity: sha512-EyZ9wWKgpAU0fLJ43YAEIF8sr5F2W3LqbS40ZJyHIner2lY14ufqv2VMp69MAiZ2rpwxEUxEhIH/0U3xyRynxg==}
+  chart.js@4.5.0:
+    resolution: {integrity: sha512-aYeC/jDgSEx8SHWZvANYMioYMZ2KX02W6f6uVfyteuCGcadDLcYVHdfdygsTQkQ4TKn5lghoojAsPj5pu0SnvQ==}
     engines: {pnpm: '>=8'}
 
   clsx@2.1.1:
@@ -944,8 +944,8 @@ packages:
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
-  react-qr-code@2.0.15:
-    resolution: {integrity: sha512-MkZcjEXqVKqXEIMVE0mbcGgDpkfSdd8zhuzXEl9QzYeNcw8Hq2oVIzDLWuZN2PQBwM5PWjc2S31K8Q1UbcFMfw==}
+  react-qr-code@2.0.16:
+    resolution: {integrity: sha512-8f54aTOo7DxYr1LB47pMeclV5SL/zSbJxkXHIS2a+QnAIa4XDVIdmzYRC+CBCJeDLSCeFHn8gHtltwvwZGJD/w==}
     peerDependencies:
       react: '*'
 
@@ -1502,7 +1502,7 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chart.js@4.4.9:
+  chart.js@4.5.0:
     dependencies:
       '@kurkle/color': 0.3.4
 
@@ -1844,9 +1844,9 @@ snapshots:
     dependencies:
       react: 19.1.0
 
-  react-chartjs-2@5.3.0(chart.js@4.4.9)(react@19.1.0):
+  react-chartjs-2@5.3.0(chart.js@4.5.0)(react@19.1.0):
     dependencies:
-      chart.js: 4.4.9
+      chart.js: 4.5.0
       react: 19.1.0
 
   react-dom@19.1.0(react@19.1.0):
@@ -1858,7 +1858,7 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-qr-code@2.0.15(react@19.1.0):
+  react-qr-code@2.0.16(react@19.1.0):
     dependencies:
       prop-types: 15.8.1
       qr.js: 0.0.0
