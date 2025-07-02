@@ -1,0 +1,252 @@
+.profile-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Current Avatar Section */
+.current-avatar-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  border: 4px solid #007bff;
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.profile-avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  border: 4px solid #dee2e6;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  color: #6c757d;
+}
+
+.current-avatar-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.current-avatar-section p {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Avatar Selection Section */
+.avatar-selection-section {
+  margin-bottom: 3rem;
+}
+
+.avatar-selection-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.avatar-option {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  padding: 4px;
+  border: 3px solid transparent;
+}
+
+.avatar-option:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
+.avatar-option.selected {
+  border-color: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
+}
+
+.avatar-option.selected::after {
+  content: '✓';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.avatar-option img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Profile Form */
+.profile-form {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.profile-form label:first-child {
+  margin-top: 0;
+}
+
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  background: white;
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.profile-form input:hover,
+.profile-form select:hover {
+  border-color: #c6d0da;
+}
+
+
+
+.save-button {
+  margin-top: 2.5rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(40, 167, 69, 0.2);
+}
+
+.save-button:hover {
+  background: linear-gradient(135deg, #218838, #1ea085);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
+}
+
+.save-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .profile-avatar,
+  .profile-avatar-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .current-avatar-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .avatar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .avatar-option img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .profile-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .avatar-option img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Loading state */
+.profile-container > div {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
